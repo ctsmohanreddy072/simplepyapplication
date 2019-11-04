@@ -9,7 +9,7 @@ COPY requirements.txt ./
 RUN pip install -r requirements.txt
 
 # Bundle app source
-#COPY src /app
+COPY *.py /app
 
 #EXPOSE 8080
 CMD [ "python", "application.py" ]
